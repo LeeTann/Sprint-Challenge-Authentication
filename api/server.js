@@ -12,4 +12,8 @@ server.use(express.json());
 
 configureRoutes(server);
 
+server.get('/', (req, res) => {
+    res.send("It's working, it's working!!!!")
+})
+
 module.exports = server;
